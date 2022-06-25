@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 1rem 1rem;
+}
+ul{
+    margin: 0 auto;
+}
+
+#logomarca{
+    width: 20%;
+    margin-left: 2rem;
+}
+#logomarca-footer{
+    width: 20%;
+}
+.footer-text{
+    color: white;
+}
+
+#github{
+    width: 2.5%;
+    text-align: right;
+}
+#linkedin{
+    width: 2.5%;
+    text-align: right;
+}

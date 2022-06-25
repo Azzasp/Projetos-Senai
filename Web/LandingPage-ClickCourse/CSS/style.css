@@ -1,0 +1,132 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #A1CEF8;
+    width: 100%;
+    
+    font-weight: bold;
+}
+footer{
+    background-color: #1A396B;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+}
+
+.container{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+#img-logo{
+    width: 217px;
+    height: 60px;    
+    margin: 1rem auto;
+}
+
+.lista{
+    margin: 2.5rem auto;
+    list-style: none;
+    font-size: 16px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.navbar ul li{
+    margin: 0 .5rem;
+}
+
+
+.btn{
+    color: #1A396B;
+    font-size: 16px;
+    text-decoration: none;
+    border-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.destaque{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+#bg{
+    width: 1500px;
+}
+
+.sec-mid{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sec-mid h1{
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #1A396B;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.mural{
+    flex-wrap: wrap;
+    display: inline-block;
+    text-align: center;
+    
+}
+.mural-img{
+    border-radius: 20px;
+}
+.mural-titulo{
+    color:#FF5551;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+.mural-texto{
+    color: #1A396B;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+.nav-footer{ 
+    position: absolute;
+}
+
+.redes-logo{
+    display: flex;
+    justify-content: right;
+    margin: -2.5rem 1rem;
+}
+#footer-titulo{
+    color: #FFF;
+    white-space: nowrap;
+    margin: 2.5rem 5rem;
+    text-align: left;
+    font-size: 14px;
+}
+#wpp{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#insta{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#tw{
+    margin-top: 20px;
+    margin-left: 15px;
+}
