@@ -53,10 +53,9 @@ footer{
     display: flex;
     justify-content: space-around;
 }
-.destaque{
-    width: 100%;
-    display: flex;
-    text-align: center;
+.destaque .card_image{
+    height: 480px;
+    background-size: cover;
 }
 #bg{
     width: 1500px;
