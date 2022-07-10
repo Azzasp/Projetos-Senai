@@ -9,13 +9,51 @@
     <title>Animações</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-wrapper">
-                <h2>Github</h2>
-                <p>Veja meus Projetos</p>
-            </div>
+    <header>
+        <div class="header">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </div>
+    </header>
+    <div class="container">
+        <section class="parallax-bg">
+            <div class="card">
+                <div class="card-wrapper" >
+                    <div class="content">
+                        <h2 id="content">Github</h2>
+                        <p>Veja meus Projetos</p>
+                    </div>
+                    <a href="#" id = "btn">Explore</a>
+                </div>
+            </div>
+            <div class="imgs">
+                <img src="images/stars.png" alt="Stars" id ="stars">
+                <img src="images/moon.png" alt="Moon" id = "moon">
+                <img src="images/mountains_behind.png" alt="Far Mountains" id = "b_mountains">
+                
+                <img src="images/mountains_front.png" alt="Close Mountains" id = "f_mountains">
+            </div>
+        </section>
     </div>
+    
+    <script>
+
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let b_mountains = document.getElementById('b_mountains');
+        let content = document.getElementById('content');
+        let f_mountains = document.getElementById('f_mountains');
+
+        window.addEventListener('scroll' , function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.10 + 'px';
+            moon.style.top = value * 0.90 + 'px';
+            b_mountains.style.top = value * 0.15 + 'px';
+            content.style.marginRight = value * 2 + 'px';
+        });
+    </script>
 </body>
 </html>
