@@ -8,11 +8,68 @@
 
 header{
     width: 100%;
-    height: 175px;
+    height: 155px;
+    background-color: #2b1055;
+}
+header h1 {
+    padding: 5px;
+    margin: 0 10px;
+    color: #fff;
+    width: 100px;
     display: flex;
+    justify-content: center;
+}
+.toggle{
+    margin-left: 70rem;
+}
+.checkbox .trace{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
 }
 
+.toggle .trace:nth-child(1){
+    top: 30px;
+    right: 30px;
+    transform: rotate(0);
+}
+.toggle .trace:nth-child(2){
+    top: 10px;
+    right: 30px;
+    transform: rotate(0);
+}
+.toggle .trace:nth-child(3){
+    top: 20px;
+    right: 30px;
+    transform: rotate(0);
+}
 
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(90deg);
+    top: 20px;
+    right: 30px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: rotate(90deg);
+    top: 20px;
+    right: 10px;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(90deg);
+    top: 20px;
+    right: 20px;
+}
+
+.menu{
+    position: absolute;
+}
 section{
     position: relative;
     width: 100%;
@@ -86,7 +143,10 @@ body{
     align-items: center;
     justify-content: center;
     transform: translateY(70px);
-    
+}
+
+#btn:hover{
+    transition: width 0.8s cubic-bezier(0.59, 0.05, 0.16);
 }
 
 #f_mountains{
