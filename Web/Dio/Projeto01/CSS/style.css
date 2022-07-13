@@ -190,19 +190,35 @@ body{
     
 }
 
-.content{
-    transform: translateX(210px);
+#content{
+    letter-spacing: normal;
+    transition: 0.5s ease-in-out;
+}#content:hover{
+    letter-spacing: 10px;
+}#content:hover + #content-p{
+    right: -40px;
 }
+#content-p {
+    right: 0;
+    letter-spacing: normal;
+    transition: 0.5s ease-in-out;
+}#content-p:hover{
+    right: 50px;
+    letter-spacing: 5px;
+}
+
+
 
 .card h2{
     color: #fff;
-    font-size: 10em;
+    font-size: 5rem;
     margin: 0 auto;
     align-items: center;
 }
 .card p{
+    position: relative;
     font-weight: 500;
-    margin: 0 auto 0 190px;
+    margin: 0 auto 0 100px;
     color: #fff;
 }
 
@@ -226,7 +242,7 @@ body{
 }
 
 #btn:hover{
-    transition: width 0.8s cubic-bezier(0.59, 0.05, 0.16);
+    transition: width 0.8s cubic-bezier(0.59 0.05 0.16 0.5);
 }
 
 #f_mountains{
