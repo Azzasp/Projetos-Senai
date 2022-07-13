@@ -1,14 +1,14 @@
 *{
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
     padding: 0;
 }
 
 header{
+    position: fixed;
+    z-index: 999;
     width: 100%;
-    height: 155px;
+    height: 50px;
     background-color: #2b1055;
 }
 header h1 {
@@ -23,12 +23,13 @@ header h1 {
     margin-left: 70rem;
 }
 
+
 .checkbox{
-    width: 350px;
-    height: 100vmax;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 25px;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -41,22 +42,23 @@ header h1 {
     background-color: #fff;
     border-radius: 20px;
     position: absolute;
+    z-index: 102;
     transition: 0.5s ease-in-out;
 }
 
 .toggle .trace:nth-child(1){
     top: 30px;
-    right: 30px;
+    right: 5px;
     transform: rotate(0);
 }
 .toggle .trace:nth-child(2){
     top: 10px;
-    right: 30px;
+    right: 5px;
     transform: rotate(0);
 }
 .toggle .trace:nth-child(3){
     top: 20px;
-    right: 30px;
+    right: 5px;
     transform: rotate(0);
 }
 
@@ -64,53 +66,31 @@ header h1 {
     display: none;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(1){
-    transform: rotate(90deg);
-    top: 20px;
-    right: 30px;
-    background-color: #2b1055;
-}
-#toggle:checked + .checkbox .trace:nth-child(2){
-    transform: rotate(90deg);
-    top: 20px;
-    right: 10px;
-    background-color: #2b1055;
-}
-#toggle:checked + .checkbox .trace:nth-child(3){
-    transform: rotate(90deg);
-    top: 20px;
-    right: 20px;
-    background-color: #2b1055;
-}
 /* Menu */
 .menu{
+    width: 350px;
+    height: 20vmax;
     position: absolute;
-    top: 5px;
-    right: 25px;
-    background-color: red;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #ffff;
-    z-index: -1;
+    top: 50px;
+    right: 0;
+    display: flex;
+    justify-content: center;
 }
-
-.menu-itens{
-    position: fixed;
+#menu-itens{
     top: 0;
     left: 12rem;
     width: 100%;
-    height: 100vh;
+    height: 20vmax;
     display: flex;
     justify-content: right;
     align-items: right;
-    z-index: 101;
-    opacity: 0;
-    visibility: hidden;
+    /* z-index: -1;
+    visibility: hidden; */
     transition: 400ms ease-in-out 0;
 }
 
-.menu-itens ul {
+#menu-itens ul {
+    margin: auto auto;
     list-style-type: none;
     text-decoration: none;
     display: flex;
@@ -118,7 +98,7 @@ header h1 {
     align-items: right;
 }
 
-.menu-itens ul li{
+#menu-itens ul li{
     margin: 10px 0;
     color: #2b1055;
     text-decoration: none;
@@ -128,25 +108,52 @@ header h1 {
 
 
 /* Animação Menu */
-#toggle:checked + .checkbox{
-    background-color: #fff;
+
+
+#toggle:checked + .checkbox .trace:nth-child(1){
+    animation-delay: 100ms;
+    transform: rotate(-45deg);
+    top: 30px;
+    right: 30px;
+    background-color: #2b1055;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    animation-delay: 100ms;
+    transform: rotate(45deg);
+    top: 30px;
+    right: 30px;
+    background-color: #2b1055;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+    right: 50px;
+    background-color: #2b1055;
+    opacity: 0;
 }
 
-#toggle:checked + .menu{
-    box-shadow: 0px 0px 0px 100vmax;
-    z-index: 200;
-}
 
-#toggle:checked + .menu-itens{
+#toggle:checked + #menu-itens{
     visibility: visible;
-    opacity: 1;
     z-index: 350;
 }
+
+#toggle:checked + .checkbox{
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    position: fixed;
+    width: 350px;
+    height: 30vmax;
+}
+
+
+
+
 /* Parallax Section */
 section{
     position: relative;
     width: 100%;
     height: 100vh;
+    margin-top: 18rem;
     padding: 100px;
 }
 
