@@ -19,4 +19,13 @@ public class Agenda {
             System.out.println(p);
         }
     }
+
+    public void removePessoa(String nome){
+        for(Pessoa p : armazena){
+            if(p.getNome().equals(nome)) {
+                armazena.remove(p);
+                break;
+            }
+        }
+    }
 }
