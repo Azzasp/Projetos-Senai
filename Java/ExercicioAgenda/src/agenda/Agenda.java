@@ -40,4 +40,8 @@ public class Agenda {
         System.out.println(nome+" está na posição: " +b);
         return b;
     }
+
+    public void imprimePessoa(int index){
+        System.out.println(armazena.get(index));
+    }
 }

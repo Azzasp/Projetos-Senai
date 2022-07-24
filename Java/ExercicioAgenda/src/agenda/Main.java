@@ -9,10 +9,13 @@ public class Main {
         agenda.armazenaPessoa("Sueli", 43, 177);
         agenda.armazenaPessoa("Malena", 28, 165);
         agenda.armazenaPessoa("Orlando", 37, 162);
+        agenda.armazenaPessoa("Jaguar", 14, 50);
+        
 
         agenda.removePessoa("Sueli");
         agenda.imprimeAgenda();
 
         agenda.buscaPessoa("Orlando");
+        agenda.imprimePessoa(2);
     }
 }
