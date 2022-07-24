@@ -48,7 +48,21 @@ public class Empregado {
         this.anoNasc = anoNasc;
         this.matricula = matricula;
         this.anoContrato = anoContrato;
+        apto();
     }
 
-    
+    private boolean apto (){
+        int idade = 2022 - anoNasc;
+        int contrato = 2022 - anoContrato;
+
+        if(idade > 55){
+            return false;
+        }
+        else{
+            if(contrato > 2 && contrato < 25){
+                System.out.println("Candidato: "+nome+" está apto!");
+                return true;
+            }
+        }
+    }
 }
