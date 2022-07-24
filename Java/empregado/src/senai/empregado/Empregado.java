@@ -65,4 +65,14 @@ public class Empregado {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Empregado{" +
+                "nome='" + nome + '\'' +
+                ", anoNasc=" + anoNasc +
+                ", matricula=" + matricula +
+                ", anoContrato=" + anoContrato +
+                '}';
+    }
 }
