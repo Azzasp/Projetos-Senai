@@ -3,8 +3,7 @@ package agenda;
 public class Pessoa {
     private String nome;
     private int idade;
-    private int altura;
-    private float cpf;
+    private float altura;
 
     public String getNome() {
         return nome;
@@ -22,19 +21,29 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public int getAltura() {
+    public float getAltura() {
         return altura;
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(float altura) {
         this.altura = altura;
     }
 
-    public float getCpf() {
-        return cpf;
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
     }
 
-    public void setCpf(float cpf) {
-        this.cpf = cpf;
+    public Pessoa(String nome, int idade, float altura) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+    }
+
+    public Pessoa() {
     }
 }
