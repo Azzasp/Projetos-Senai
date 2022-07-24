@@ -6,7 +6,6 @@ public class Main {
         Empregado empregado1 = new Empregado("Pedro", 1994, 12345, 2005);
 
         empregado1.isApto();
-
         System.out.println(empregado1);
     }
 }
