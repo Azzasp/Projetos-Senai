@@ -51,17 +51,17 @@ public class Empregado {
         apto();
     }
 
-    private boolean apto (){
+    private void apto (){
         int idade = 2022 - anoNasc;
         int contrato = 2022 - anoContrato;
 
         if(idade > 55){
-            return false;
+            apto = false;
         }
         else{
             if(contrato > 2 && contrato < 25){
                 System.out.println("Candidato: "+nome+" está apto!");
-                return true;
+                apto = true;
             }
         }
     }
