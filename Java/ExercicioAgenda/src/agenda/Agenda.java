@@ -28,4 +28,16 @@ public class Agenda {
             }
         }
     }
+
+    public int buscaPessoa(String nome){
+        int b = 0;
+        for(int a = 0; a<armazena.size(); a++){
+            if(armazena.get(a).getNome().equals(nome)){
+              b = armazena.indexOf(armazena.get(a));
+              break;
+            }
+        }
+        System.out.println(nome+" está na posição: " +b);
+        return b;
+    }
 }
