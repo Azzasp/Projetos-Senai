@@ -84,6 +84,34 @@ body{
     font-weight: bold;
 }
 
+#reaction{
+    color:  hsl(0, 100%, 67%);
+}
+#reaction-bg{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#memory{
+    color: hsl(39, 100%, 56%);
+}
+#memory-bg{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verbal{
+    color: hsl(166, 100%, 37%);
+}
+#verbal-bg{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#visual{
+    color: hsl(234, 85%, 45%);
+}
+#visual-bg{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
 #button-input{
     background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 85%);
     width: 260px;
@@ -95,6 +123,7 @@ body{
     border-radius: 40px;
 }
 
+
 .buttons{
     margin-top: 12px;
     height: 40px;
@@ -103,6 +132,8 @@ body{
     border-radius: 10px;
     background-color: aqua;
 }
+
+
 
 .buttons img{
 
@@ -117,6 +148,7 @@ body{
 }
 
 .notes{
+    color: black;
     position: relative;
     text-align: right;
     margin-top: -20px;
